@@ -1,0 +1,37 @@
+h2 {
+  font-family: 'Source Sans Pro';
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+output {
+  display: flex;
+  font-family: 'Bungee';
+  justify-content: flex-end;
+}
+
+#buttonAndCount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  font-family: 'Bungee';
+  background-color: #4056A1;
+  color: white;
+}
+
+form span {
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: gray;
+}
+
+.red {
+  color: red;
+}
