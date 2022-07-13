@@ -35,3 +35,59 @@ form span {
 .red {
   color: red;
 }
+
+article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 240px;
+  border: solid;
+  border-width: 5px;
+  border-color: gray;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+article img {
+  display: flex;
+  width: 100px;
+}
+
+#tweetTopLeft {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tweetText {
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#picAndName {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+article span {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.highlight {
+  color: rgb(226, 226, 76);
+}
+
+.shadow {
+  box-shadow: 7px 5px 5px grey;
+}

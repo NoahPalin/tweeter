@@ -34,6 +34,7 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script type="text/javascript" src="/scripts/tweet-buttons.js"></script>
 
 </head>
 
@@ -62,7 +63,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <h2></h2>
       <form method="POST" action="/tweets">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <span></span>
@@ -71,7 +72,28 @@
           <output name="counter" id="charCounter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+      <article>
+        <div id="tweetTopLeft">
+          <div id="picAndName">
+            <img src="/images/profile-hex.png">
+            <div>James</div>
+          </div>
+          <div>@jman73</div>
+        </div>
+        <div> </div>
+        <div id="tweetText">OMG don't even get me started on Apple vs Android, Apple is just overpriced junk.</div>
+        <span>
+          <div>7 days ago</div>
+          <div>
+            <i1 class="fa-solid fa-flag"></i1>
+            <i2 class="fa-solid fa-retweet"></i2>
+            <i3 class="fa-solid fa-heart"></i3>
+          </div>
+        </span>
+      </article>
     </section>
+    <footer>
+    </footer>
   </main>
 </body>
 
