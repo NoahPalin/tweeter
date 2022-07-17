@@ -91,3 +91,9 @@ article span {
 .shadow {
   box-shadow: 7px 5px 5px grey;
 }
+
+#tweet-text {
+  background: transparent;
+  border: transparent;
+}
+
