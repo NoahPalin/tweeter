@@ -1,5 +1,12 @@
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function (tweetObj) {
-  // console.log(tweetObj);
+  const safeHTML = escape(tweetObj.content.text);
+
   const tweet = `
   <article>
     <div id="tweetTopLeft">
@@ -9,7 +16,7 @@ const createTweetElement = function (tweetObj) {
       </div>
       <div>${tweetObj.user.handle}</div>
     </div>
-    <div id="tweetText">${tweetObj.content.text}</div>
+    <div id="tweetText">${safeHTML}</div>
     <span>
       <div class="need_to_be_rendered">${timeago.format(tweetObj.created_at)}</div>
       <div>
