@@ -95,5 +95,21 @@ i:hover {
 #tweet-text {
   background: transparent;
   border: transparent;
+  margin-top: 20px;
+}
+
+.errors {
+  border-style: solid;
+  border-color: red;
+  border-width: 6px;
+
+  color: red;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-top: 20px;
 }
 

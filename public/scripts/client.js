@@ -39,6 +39,9 @@ const renderTweets = function (arrOfTweets) {
 };
 
 const loadTweets = function () {
+  $(".errors").slideUp();
+  $(".errors").empty();
+
   $.ajax({
     method: "GET",
     url: "/tweets",
@@ -51,16 +54,31 @@ $(document).ready(function () {
    * jQuery is already loaded
    * Reminder: Use (and do all your DOM work in) jQuery's document ready function
    */
+
+  $(".errors").hide();
+
   $("#submit-btn").submit(function (event) {
     event.preventDefault();
 
     if ($(this).find("textarea").val().length < 1) {
-      alert("You can't post an empty tweet");
+      const noChar = `
+      <i class="fa-solid fa-bomb"></i>
+        Sorry, your tweet contains no characters.
+      <i class="fa-solid fa-bomb"></i>`;
+      
+      $(".errors").append(noChar);
+      $(".errors").slideDown();
       return;
     }
 
     if ($(this).find("textarea").val().length > 140) {
-      alert("You can't post a tweet with more than 140 characters.");
+      const maxChar = `
+      <i class="fa-solid fa-bomb"></i>
+        Sorry, your tweet contains more than 140 characters.
+      <i class="fa-solid fa-bomb"></i>`;
+      
+      $(".errors").append(maxChar);
+      $(".errors").slideDown();
       return;
     }
 
