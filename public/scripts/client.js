@@ -13,9 +13,9 @@ const createTweetElement = function (tweetObj) {
     <span>
       <div class="need_to_be_rendered">${timeago.format(tweetObj.created_at)}</div>
       <div>
-        <i1 class="fa-solid fa-flag"></i1>
-        <i2 class="fa-solid fa-retweet"></i2>
-        <i3 class="fa-solid fa-heart"></i3>
+        <i class="fa-solid fa-flag"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-heart"></i>
       </div>
     </span>
   </article>`;
@@ -25,33 +25,10 @@ const createTweetElement = function (tweetObj) {
 
 const renderTweets = function (arrOfTweets) {
   $('#tweets-container').empty();
-  for (let element of arrOfTweets) {
-    let tweet = createTweetElement(element);
+  for (let i = arrOfTweets.length - 1; i >= 0; i--) {
+    let tweet = createTweetElement(arrOfTweets[i]);
     $('#tweets-container').append(tweet);
   }
-  // $("i1").hover(function() {
-  //   $("i1").addClass("highlight")
-  // }, function() {
-  //   $("i1").removeClass("highlight")
-  // });
-
-  // $("i2").hover(function() {
-  //   $("i2").addClass("highlight")
-  // }, function() {
-  //   $("i2").removeClass("highlight")
-  // });
-
-  // $("i3").hover(function() {
-  //   $("i3").addClass("highlight")
-  // }, function() {
-  //   $("i3").removeClass("highlight")
-  // });
-
-  // $("article").hover(function() {
-  //   $("article").addClass("shadow")
-  // }, function() {
-  //   $("article").removeClass("shadow")
-  // });
 };
 
 const loadTweets = function () {

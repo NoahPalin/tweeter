@@ -50,6 +50,10 @@ article {
   padding-bottom: 10px;
 }
 
+article:hover {
+  box-shadow: 7px 5px 5px grey;
+}
+
 article img {
   display: flex;
   width: 100px;
@@ -84,12 +88,8 @@ article span {
   padding-top: 8px;
 }
 
-.highlight {
+i:hover {
   color: rgb(226, 226, 76);
-}
-
-.shadow {
-  box-shadow: 7px 5px 5px grey;
 }
 
 #tweet-text {
