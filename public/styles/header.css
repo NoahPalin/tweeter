@@ -11,3 +11,24 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
   margin-top: 120px;
 }
+
+header img {
+  padding-top: 20px;
+}
+
+@media (min-width: 1024px){
+  header {
+    width: 30%;
+    margin-top: 200px;
+    margin-left: 40px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .new-tweet {
+    padding-top: 175px;
+  }
+}

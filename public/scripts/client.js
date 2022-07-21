@@ -41,7 +41,7 @@ const renderTweets = function (arrOfTweets) {
 const loadTweets = function () {
   $(".errors").slideUp();
   $(".errors").empty();
-
+  
   $.ajax({
     method: "GET",
     url: "/tweets",
