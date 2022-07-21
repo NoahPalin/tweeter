@@ -16,7 +16,7 @@ const createTweetElement = function (tweetObj) {
       </div>
       <div>${tweetObj.user.handle}</div>
     </div>
-    <div id="tweetText">${safeHTML}</div>
+    <div id="tweet-text">${safeHTML}</div>
     <span>
       <div class="need_to_be_rendered">${timeago.format(tweetObj.created_at)}</div>
       <div>
