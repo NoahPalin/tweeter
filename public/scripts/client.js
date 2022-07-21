@@ -9,8 +9,8 @@ const createTweetElement = function (tweetObj) {
 
   const tweet = `
   <article>
-    <div id="tweetTopLeft">
-      <div id="picAndName">
+    <div id="tweet-top-left">
+      <div id="pic-and-name">
         <img src=${tweetObj.user.avatars}>
           <div>${tweetObj.user.name}</div>
       </div>

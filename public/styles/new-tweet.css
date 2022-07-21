@@ -44,11 +44,15 @@ article {
   border: solid;
   border-width: 5px;
   border-color: gray;
+  height: fit-content;
 
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
+
+  max-height: fit-content;
+  max-width: 700px;
 }
 
 article:hover {
@@ -60,7 +64,7 @@ article img {
   width: 100px;
 }
 
-#tweetTopLeft {
+#tweet-top-left {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -74,9 +78,10 @@ article img {
   border-color: gray;
   padding-top: 20px;
   padding-bottom: 20px;
+  word-wrap: break-word;
 }
 
-#picAndName {
+#pic-and-name {
   display: flex;
   flex-direction: row;
   align-content: center;

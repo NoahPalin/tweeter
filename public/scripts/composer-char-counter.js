@@ -3,12 +3,12 @@ $(document).ready(function() {
     let length = $("#tweet-text").val().length;
 
     if (length > 140) {
-      $("#charCounter").addClass("red");
+      $("#char-counter").addClass("red");
     } else if (length <= 140) {
-      $("#charCounter").removeClass("red");
+      $("#char-counter").removeClass("red");
     }
 
-    $("#charCounter").text(140 - length);
+    $("#char-counter").text(140 - length);
   });
 });
 
