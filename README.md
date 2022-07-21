@@ -15,7 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product
 
 An example of what Tweeter looks like on desktop.
-![The homepage of TinyApp where the user's URLs are displayed.](https://github.com/NoahPalin/tinyapp/blob/master/docs/urls-page.png)
+![The homepage of TinyApp where the user's URLs are displayed.](https://github.com/NoahPalin/tweeter/blob/b4a0941a36a2990e85fdc56f7d229cbebb03d909/public/images/Screen%20Shot%202022-07-21%20at%202.36.02%20PM.png)
 
 An example of what Tweeter looks like on a smaller tablet-sized screen.
 ![The homepage of TinyApp where the user's URLs are displayed.](https://github.com/NoahPalin/tinyapp/blob/master/docs/urls-page.png)
