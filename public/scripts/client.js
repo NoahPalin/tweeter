@@ -41,6 +41,10 @@ const renderTweets = function (arrOfTweets) {
 const loadTweets = function () {
   $(".errors").slideUp();
   $(".errors").empty();
+
+  // Reset the textare back to default.
+  $("textarea").val("");
+  $("#char-counter").val(140);
   
   $.ajax({
     method: "GET",
@@ -48,13 +52,12 @@ const loadTweets = function () {
   }).then(renderTweets);
 };
 
-$(document).ready(function () {
-  /*
-   * Client-side JS logic goes here
-   * jQuery is already loaded
-   * Reminder: Use (and do all your DOM work in) jQuery's document ready function
-   */
+const clearErrors = function () {
+  $(".errors").slideUp();
+  $(".errors").empty();
+};
 
+$(document).ready(function () {
   $(".errors").hide();
 
   $("#submit-btn").submit(function (event) {
@@ -68,6 +71,8 @@ $(document).ready(function () {
       
       $(".errors").append(noChar);
       $(".errors").slideDown();
+      setTimeout(clearErrors, 5000);
+
       return;
     }
 
@@ -79,6 +84,8 @@ $(document).ready(function () {
       
       $(".errors").append(maxChar);
       $(".errors").slideDown();
+      setTimeout(clearErrors, 5000);
+
       return;
     }
 
