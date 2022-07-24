@@ -72,6 +72,12 @@ article img {
   justify-content: space-between;
 }
 
+#new-tweet-text {
+  background: transparent;
+  border: transparent;
+  margin-top: 20px;
+}
+
 #tweet-text {
   border-bottom: solid;
   border-width: 5px;
@@ -96,12 +102,6 @@ article span {
 
 i:hover {
   color: rgb(226, 226, 76);
-}
-
-#tweet-text {
-  background: transparent;
-  border: transparent;
-  margin-top: 20px;
 }
 
 .errors {
