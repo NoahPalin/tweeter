@@ -72,12 +72,14 @@ article img {
   justify-content: space-between;
 }
 
+/* Textbox where the user types.*/
 #new-tweet-text {
   background: transparent;
   border: transparent;
   margin-top: 20px;
 }
 
+/* Text on a user's tweet.*/
 #tweet-text {
   border-bottom: solid;
   border-width: 5px;

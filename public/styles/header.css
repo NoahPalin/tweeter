@@ -16,6 +16,7 @@ header img {
   padding-top: 20px;
 }
 
+/* Changes CSS when viewing on a large screen.*/
 @media (min-width: 1024px){
   header {
     width: 30%;
