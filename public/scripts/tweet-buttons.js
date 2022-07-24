@@ -1,3 +1,4 @@
+// Adds highlighting when certain icons are hovered over.
 $(document).ready(function() {
   $("i1").hover(function() {
     $("i1").addClass("highlight")

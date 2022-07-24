@@ -4,6 +4,7 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
+// Creates all the HTML for a new tweet.
 const createTweetElement = function (tweetObj) {
   const safeHTML = escape(tweetObj.content.text);
 
@@ -30,8 +31,10 @@ const createTweetElement = function (tweetObj) {
   return tweet;
 };
 
+// Appends the newly submnitted tweet to the page.
 const renderTweets = function (arrOfTweets) {
   $('#tweets-container').empty();
+
   for (let i = arrOfTweets.length - 1; i >= 0; i--) {
     let tweet = createTweetElement(arrOfTweets[i]);
     $('#tweets-container').append(tweet);
@@ -39,6 +42,7 @@ const renderTweets = function (arrOfTweets) {
 };
 
 const loadTweets = function () {
+  // Removes the error box.
   $(".errors").slideUp();
   $(".errors").empty();
 
@@ -63,6 +67,7 @@ $(document).ready(function () {
   $("#submit-btn").submit(function (event) {
     event.preventDefault();
 
+    //Checks if there are at least 1 character to tweet.
     if ($(this).find("textarea").val().length < 1) {
       const noChar = `
       <i class="fa-solid fa-bomb"></i>
@@ -76,6 +81,7 @@ $(document).ready(function () {
       return;
     }
 
+    // Checks if there are more than 140 characters in the tweet.
     if ($(this).find("textarea").val().length > 140) {
       const maxChar = `
       <i class="fa-solid fa-bomb"></i>
@@ -95,6 +101,7 @@ $(document).ready(function () {
       data: $(this).serialize(),
     }).then(loadTweets)
   });
+  
   loadTweets();
 });
 

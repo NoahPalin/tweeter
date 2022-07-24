@@ -1,3 +1,4 @@
+// Updates the character counter as the user types.
 $(document).ready(function() {
   $(".new-tweet").on('input', function() {
     let length = $("#tweet-text").val().length;
