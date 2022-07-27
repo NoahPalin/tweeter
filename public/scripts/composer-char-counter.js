@@ -1,7 +1,7 @@
 // Updates the character counter as the user types.
 $(document).ready(function() {
   $(".new-tweet").on('input', function() {
-    let length = $("#tweet-text").val().length;
+    let length = $("#new-tweet-text").val().length;
 
     if (length > 140) {
       $("#char-counter").addClass("red");

@@ -46,9 +46,9 @@ const loadTweets = function () {
   $(".errors").slideUp();
   $(".errors").empty();
 
-  // Reset the textare back to default.
+  // Reset the textarea back to default.
   $("textarea").val("");
-  $("#char-counter").val(140);
+  $("#char-counter").text("140");
   
   $.ajax({
     method: "GET",
